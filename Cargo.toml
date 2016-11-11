@@ -1,0 +1,20 @@
+[package]
+name = "t12r"
+version = "0.1.0"
+authors = ["Mark Lee <Mark.Lee@infogroup.com>"]
+license = "Apache-2.0"
+publish = false
+
+[features]
+
+lint = ["clippy"]
+
+[dependencies]
+ruru = "0.9"
+unidecode = "0.2"
+
+clippy = { version = "*", optional = true }
+
+[lib]
+
+crate-type = ["cdylib"]

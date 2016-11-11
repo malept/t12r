@@ -1,0 +1,11 @@
+*.bk
+*.dll
+*.dylib
+*.gem
+*.so
+*.tar.gz
+.bundle
+Cargo.lock
+Gemfile.lock
+mkmf.log
+target

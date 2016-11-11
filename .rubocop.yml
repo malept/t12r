@@ -1,0 +1,93 @@
+AllCops:
+  TargetRubyVersion: 2.3
+
+Lint/EndAlignment:
+  Enabled: true
+  AlignWith: variable
+
+Lint/UnusedMethodArgument:
+  Enabled: false
+
+Metrics/CyclomaticComplexity:
+  Max: 10
+
+Metrics/LineLength:
+  Max: 100
+
+Metrics/PerceivedComplexity:
+  Max: 10
+
+Style/AlignParameters:
+  EnforcedStyle: with_fixed_indentation
+
+Style/AndOr:
+  Enabled: true
+
+Style/BracesAroundHashParameters:
+  Enabled: true
+
+Style/CaseIndentation:
+  Enabled: true
+
+Style/Documentation:
+  Enabled: false
+
+Style/EmptyLines:
+  Enabled: true
+
+Style/EmptyLinesAroundClassBody:
+  Enabled: true
+
+Style/EmptyLinesAroundModuleBody:
+  Enabled: true
+
+# TODO: Remove when we want to start using this
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+# No early returns
+Style/GuardClause:
+  Enabled: false
+
+Style/HashSyntax:
+  Enabled: true
+
+Style/IfUnlessModifier:
+  Enabled: false
+
+# Private blocks need to be indented
+Style/IndentationConsistency:
+  EnforcedStyle: rails
+
+Style/IndentationWidth:
+  Enabled: true
+
+Style/Lambda:
+  EnforcedStyle: literal
+
+Style/MethodDefParentheses:
+  Enabled: true
+
+Style/MultilineMethodCallIndentation:
+  EnforcedStyle: indented
+
+Style/Next:
+  Enabled: false
+
+Style/StringLiterals:
+  Enabled: false
+
+Style/StructInheritance:
+  Enabled: false
+
+Style/Tab:
+  Enabled: true
+
+Style/TrailingBlankLines:
+  Enabled: false
+
+Style/TrailingWhitespace:
+  Enabled: true
+
+Style/UnneededPercentQ:
+  Enabled: true
