@@ -1,7 +1,8 @@
 # T12r
 
-T12r (or Transliterator) is a speedup and enhancement for the `i18n` gem's `I18n.transliterate`
-method, using a Rust-based native extension. It supports more characters out-of-the-box.
+T12r (or Transliterator) is a speedup and enhancement for the [`i18n` gem](https://rubygems.org/gems/i18n)'s
+`I18n.transliterate` method, using a Rust-based native extension. It supports more characters
+out-of-the-box.
 
 ## Requirements
 
@@ -15,6 +16,17 @@ declare `gem 'i18n'`:
 
 ```ruby
 gem 't12r', require: 't12r/i18n_monkeypatch'
+```
+
+To only use `T12r.transliterate` directly, omit the `require` argument.
+
+### Example
+
+```ruby
+> T12r.transliterate('…yes?')
+=> '...yes?'
+> T12r.transliterate('Input string…', ' ' => '-')
+=> 'Input-string...'
 ```
 
 # Legal
