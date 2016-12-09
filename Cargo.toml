@@ -6,7 +6,6 @@ license = "Apache-2.0"
 publish = false
 
 [features]
-
 lint = ["clippy"]
 
 [dependencies]
@@ -16,5 +15,7 @@ unidecode = "0.2"
 clippy = { version = "*", optional = true }
 
 [lib]
-
 crate-type = ["cdylib"]
+
+[package.metadata.thermite]
+github_releases = true
