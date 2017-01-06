@@ -1,5 +1,7 @@
 # T12r
 
+[![Build Status](https://travis-ci.org/data-axle/t12r.svg?branch=master)](https://travis-ci.org/data-axle/t12r)
+
 T12r (or Transliterator) is a speedup and enhancement for the [`i18n` gem](https://rubygems.org/gems/i18n)'s
 `I18n.transliterate` method, using a Rust-based native extension. It supports more characters
 out-of-the-box.
