@@ -11,6 +11,10 @@ env:
   - THERMITE_DEBUG_FILENAME: /tmp/thermite-debug.log
   matrix:
   - T12R_RUBY_VERSION: 2.3.1
+matrix:
+  include:
+  - os: osx
+    osx_image: xcode8
 
 cache:
   cargo: true
