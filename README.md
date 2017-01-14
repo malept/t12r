@@ -11,6 +11,12 @@ out-of-the-box.
 * Ruby ≥ 2.3 (built with shared libraries)
 * [Rust](http://www.rust-lang.org/) (if you build from source)
 
+If you're using t12r on OSX without Rust installed, please note that the prebuilt binaries are built
+with the following xcode versions:
+
+* OSX 10.11: xcode 8.0
+* OSX 10.12: xocde 8.1
+
 ## Usage
 
 To speed up existing calls to `I18n.transliterate`, add this `gem` line to your `Gemfile`, after you
