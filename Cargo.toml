@@ -1,6 +1,6 @@
 [package]
 name = "t12r"
-version = "0.1.5"
+version = "0.1.6"
 authors = ["Mark Lee <Mark.Lee@infogroup.com>"]
 repository = "https://github.com/data-axle/t12r"
 license = "Apache-2.0"
