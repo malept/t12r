@@ -11,7 +11,7 @@ lint = ["clippy"]
 
 [dependencies]
 ruru = "0.9"
-unidecode = "0.2"
+unidecode = "0.3"
 
 clippy = { version = "*", optional = true }
 
