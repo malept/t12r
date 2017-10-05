@@ -10,6 +10,9 @@ publish = false
 ruru = "0.9"
 unidecode = "0.3"
 
+[replace]
+"ruby-sys:0.2.20" = { git = "http://github.com/malept/ruby-sys", branch = "test-osx-and-static-builds" }
+
 [lib]
 crate-type = ["cdylib"]
 
