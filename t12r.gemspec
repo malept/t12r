@@ -1,9 +1,11 @@
 # -*- coding: utf-8 -*-
 require 'English'
 
+VERSION = File.read(File.join(File.dirname(__FILE__), 'Cargo.toml')).match(/^version = "(.*?)"$/m).group(1)
+
 Gem::Specification.new do |s|
   s.name    = 't12r'
-  s.version = '0.1.6'
+  s.version = VERSION
   s.authors = ['Mark Lee']
   s.email   = ['Mark.Lee@infogroup.com']
   s.summary = 'Rust-based speedup for transliterating Unicode characters into ASCII.'
