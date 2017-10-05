@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 require 'English'
 
-VERSION = File.read(File.join(File.dirname(__FILE__), 'Cargo.toml')).match(/^version = "(.*?)"$/m).group(1)
+VERSION = File.read(File.join(File.dirname(__FILE__), 'Cargo.toml')).match(/^version = "(.*?)"$/m)[1]
 
 Gem::Specification.new do |s|
   s.name    = 't12r'
