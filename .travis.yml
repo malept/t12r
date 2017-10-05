@@ -25,10 +25,10 @@ before_install:
 - |
   rvm install "$T12R_RUBY_VERSION"
   rvm use "$T12R_RUBY_VERSION"
-  ruby --version
   if [[ "$TRAVIS_OS_NAME" == "osx" ]] && ! which bundle > /dev/null; then
     gem install bundler
   fi
+- export LD_LIBRARY_PATH=$(ruby -e 'print RbConfig::CONFIG["libdir"]')
 - bundle install --jobs=3 --retry=3 --path=$TRAVIS_BUILD_DIR/vendor/bundle
 
 script:
