@@ -4,7 +4,7 @@ os:
 - linux
 - osx
 dist: trusty
-osx_image: xcode8.3
+osx_image: xcode9
 rust: stable
 env:
   global:
@@ -17,7 +17,7 @@ matrix:
   - os: linux
     env: RUBY_STATIC=1
   - os: osx
-    osx_image: xcode8.3
+    osx_image: xcode9
     env: RUBY_STATIC=1
   - os: osx
     osx_image: xcode8
