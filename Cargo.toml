@@ -6,14 +6,9 @@ repository = "https://github.com/data-axle/t12r"
 license = "Apache-2.0"
 publish = false
 
-[features]
-lint = ["clippy"]
-
 [dependencies]
 ruru = "0.9"
 unidecode = "0.3"
-
-clippy = { version = "*", optional = true }
 
 [lib]
 crate-type = ["cdylib"]
