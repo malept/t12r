@@ -16,5 +16,5 @@ Gem::Specification.new do |s|
 
   s.extensions << 'ext/Rakefile'
 
-  s.add_runtime_dependency 'thermite', '~> 0.10'
+  s.add_runtime_dependency 'thermite', '~> 0.13'
 end
