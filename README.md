@@ -17,6 +17,9 @@ with the following xcode versions:
 * OSX 10.11: xcode 8.0
 * OSX 10.12: xcode 9.0
 
+Since they are built on Travis CI, prebuilt OSX binaries may require libgmp (`brew install gmp`
+or equivalent).
+
 ## Usage
 
 To speed up existing calls to `I18n.transliterate`, add this `gem` line to your `Gemfile`, after you
