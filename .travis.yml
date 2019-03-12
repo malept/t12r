@@ -3,8 +3,8 @@ os:
 - linux
 - osx
 dist: xenial
-# macOS 10.12
-osx_image: xcode9.2
+# macOS 10.13
+osx_image: xcode10.1
 rust: stable
 env:
   global:
@@ -13,9 +13,6 @@ env:
   - T12R_RUBY_VERSION: 2.4.5
 matrix:
   include:
-  # macOS 10.13
-  - os: osx
-    osx_image: xcode10.1
   # macOS 10.14
   - os: osx
     osx_image: xcode10.2
