@@ -8,16 +8,16 @@ out-of-the-box.
 
 ## Requirements
 
-* Ruby ≥ 2.4 (built with shared libraries)
+* Ruby ≥ 2.4
 * [Rust](http://www.rust-lang.org/) (if you build from source)
 
-If you're using t12r on OSX without Rust installed, please note that the prebuilt binaries are built
+If you're using t12r on macOS without Rust installed, please note that the prebuilt binaries are built
 with the following xcode versions:
 
-* OSX 10.11: xcode 8.0
-* OSX 10.12: xcode 9.0
+* macOS 10.13: xcode 10.1
+* macOS 10.14: xcode 10.2
 
-Since they are built on Travis CI, prebuilt OSX binaries may require libgmp (`brew install gmp`
+Since they are built on Travis CI, prebuilt macOS binaries may require libgmp (`brew install gmp`
 or equivalent).
 
 ## Usage
