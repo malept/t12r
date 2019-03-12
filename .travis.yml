@@ -1,27 +1,24 @@
-sudo: false
 language: rust
 os:
 - linux
 - osx
-dist: trusty
-osx_image: xcode9
+dist: xenial
+# macOS 10.12
+osx_image: xcode9.2
 rust: stable
 env:
   global:
+  - RUBY_STATIC: 1
   - THERMITE_DEBUG_FILENAME: /tmp/thermite-debug.log
-  - T12R_RUBY_VERSION: 2.4.2
+  - T12R_RUBY_VERSION: 2.4.5
 matrix:
   include:
+  # macOS 10.13
   - os: osx
-    osx_image: xcode8
-  - os: linux
-    env: RUBY_STATIC=1
+    osx_image: xcode10.1
+  # macOS 10.14
   - os: osx
-    osx_image: xcode9
-    env: RUBY_STATIC=1
-  - os: osx
-    osx_image: xcode8
-    env: RUBY_STATIC=1
+    osx_image: xcode10.2
 
 cache:
   cargo: true
