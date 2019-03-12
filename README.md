@@ -8,7 +8,7 @@ out-of-the-box.
 
 ## Requirements
 
-* Ruby ≥ 2.4 (built with shared libraries)
+* Ruby ≥ 2.4
 * [Rust](http://www.rust-lang.org/) (if you build from source)
 
 If you're using t12r on OSX without Rust installed, please note that the prebuilt binaries are built
